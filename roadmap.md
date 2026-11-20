@@ -1,0 +1,26 @@
+# Roadmap
+
+- [x] Port RESENHAPG prototype 0.1 (canvas game, HUD, touch controls, start screen) to the home page
+- [x] Swap placeholder character sprites for the user's own art (cut from their sprite sheet)
+- [x] Animate characters with the sheet's walk, attack and special poses
+- [x] Add the user's zombie, spider and skeleton sprites (walk, attack, death) with simple chase/attack behaviour
+- [x] Use the user's environment textures (grass, dirt trail, trees, rocks, bushes, flowers, ponds, objects)
+- [x] Main menu art before play, hero picked there (JOGAR starts)
+- [x] Use the user's life/mana/coin bar art as the in-game HUD
+- [x] Fase 2 "Mina Sombria": mine entrance at the end of Fase 1, stronger monsters, Rei Esqueleto boss, treasure chest
+- [x] Boss sprite: use the user's "Nelson Selvagem" monkey sheet (idle, walk, run, hurt, death)
+- [x] Music: menu theme on the main menu (stops on JOGAR), mine theme in Fase 2
+- [x] Cabaré interior (user picture): enter with FALAR at the door, shop with Cleyde at the counter, FALAR at the door to leave
+- [ ] Use the user's cave texture sheet (screenshot sent) in Fase 2: floor, walls, rocks, crystals, torches, mine entrance, props
+- [x] Music: Windmill Hut on the menu, Kokiri Forest in Fase 1, "Já que me ensinou a beber" only inside the Cabaré
+- [ ] Mine (Fase 2) song — blocked: old mine-theme.mp3 wasn't in the ZIP, user to send one
+- [x] Michele in the Cabaré corner: user's scripted chat, gives the endless Disco de Phunk (shown in ITENS)
+- [ ] Disc delivery in each new phase — blocked: user to say who/where receives the disc (Mina first)
+- [x] Cabaré tables redrawn more realistic (wood, candle, bottle, chairs)
+- [x] David seated at a Cabaré table: user's scripted chat, lost RPG book hidden behind a tree in Fase 1, deliver for 50 moedas
+- [ ] Ricardo Milos on the Cabaré stage (front pose): "Você já viu o Ricardo Milos?"; 35% rare line gives the magic-key quest
+- [ ] Pai de Família seated at a Cabaré table: "AI QUE DELÍCIA"
+- [ ] Magic key hidden in Fase 1, deliver to Nelson Selvagem → user's dance video (lv_0_20261115022414.mp4) → party respawns dead
+- [ ] Opening comic cutscene after JOGAR, click to dismiss
+- [ ] Volume control (menu + in game), remembered
+- [ ] Save / CONTINUAR on the menu

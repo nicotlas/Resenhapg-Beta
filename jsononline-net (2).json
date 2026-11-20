@@ -1,0 +1,4 @@
+Parse error on line 2:
+{  "name":"main": "main.js",  "priv
+----------------^
+Expecting 'EOF', '}', ',', ']', got ':'

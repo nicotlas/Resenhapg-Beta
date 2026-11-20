@@ -1,0 +1,82 @@
+{
+  "source": "v0 (ZIP: trilha-verde-trailblazers-main_2.zip; TanStack Start + canvas game, no backend)",
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "src/components/game, src/routes, src/styles.css",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "bundled sprite art",
+      "source": "src/assets/sprites/*.png (27 files)",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "menu art + music (hosted files)",
+      "source": "src/assets/resenhapg-menu.png, audio/menu-theme.mp3, audio/mine-theme.mp3 (pointers to the old project's file host)",
+      "outcome": "migrate",
+      "status": "blocked",
+      "next_action": "File bytes are not in the ZIP and the old links return 404 here; user must re-upload the 3 files"
+    },
+    {
+      "capability": "schema",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "records",
+      "source": "none detected (no data store)",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "auth identities / authorization",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "uploaded file bytes / storage",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "external providers, public endpoints, callbacks, webhooks, schedules, secrets",
+      "source": "none detected (only import.meta.env.DEV)",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "project docs (roadmap, project rules, north star)",
+      "source": "roadmap.md, AGENTS.md project rules, .lovable/north-star",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "cutover",
+      "source": "old project URL",
+      "outcome": "user decision",
+      "status": "pending",
+      "next_action": "Publish this project when ready"
+    },
+    {
+      "capability": "verification",
+      "source": "-",
+      "outcome": "verify",
+      "status": "partial",
+      "next_action": "Build OK, routing test passes, menu and Fase 1 play verified in browser; re-check menu art and music after re-upload"
+    }
+  ]
+}
