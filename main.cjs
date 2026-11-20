@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { pathToFileURL } = require('url');
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -15,18 +16,28 @@ function createWindow() {
     }
   });
 
-  // Abre as ferramentas de desenvolvedor para vermos qualquer erro na tela
-  win.webContents.openDevTools();
-
-  // Tenta carregar o servidor local do seu PC primeiro!
-  // Se você estiver com o 'npm run dev' rodando, abre na hora liso e sem travas:
-  win.loadURL('http://localhost:8080').catch(() => {
-    // Se o servidor local estiver desligado, tenta a web:
-    win.loadURL('https://verdant-hero-trail.lovable.app');
-  });
+  win.loadURL('http://127.0.0.1:3000');
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(async () => {
+  try {
+    process.env.NITRO_HOST = '127.0.0.1';
+    process.env.NITRO_PORT = '3000';
+
+    const serverPath = path.join(
+      app.getAppPath(),
+      '.output',
+      'server',
+      'index.mjs'
+    );
+
+    await import(pathToFileURL(serverPath).href);
+
+    createWindow();
+  } catch (error) {
+    console.error('Erro ao iniciar o RESENHAPG:', error);
+  }
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
